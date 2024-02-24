@@ -14,7 +14,7 @@ const eqArrays = function(array1, array2) {
   }
   for (let x in array1) {
     if (array1[x] !== array2[x]) {
-      test = false;
+      return test = false;
     }
   }
   return test;
