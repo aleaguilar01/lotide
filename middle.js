@@ -26,12 +26,11 @@ const middle = function(array) {
     if (array.length % 2 === 0) {
       middle.push(array[array.length / 2 - 1]);
       middle.push(array[array.length / 2]);
-      return middle;
     } else {
       middle.push(array[Math.floor(array.length / 2)]);
-      return middle;
     }
   }
+  return middle;
 };
 
 assertArraysEqual((middle([1,2,3,4,5])), [3]);
