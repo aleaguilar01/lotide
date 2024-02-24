@@ -27,3 +27,4 @@ assertEqual(result3.length, 0);
 
 const result4 = tail([]);
 assertEqual(result4.length, 0);
+
