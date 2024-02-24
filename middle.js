@@ -20,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
 
 const middle = function(array) {
   let middle = [];
-  if (array.length === 0 || array.length === 1 || array.length === 2) {
+  if (array.length <= 2) {
     return middle;
   } else {
     if (array.length % 2 === 0) {
@@ -28,7 +28,7 @@ const middle = function(array) {
       middle.push(array[array.length / 2]);
       return middle;
     } else {
-      middle.push(array[(array.length - 1) / 2]);
+      middle.push(array[Math.floor(array.length / 2)]);
       return middle;
     }
   }
