@@ -10,6 +10,7 @@ const eqArrays = function(array1, array2) {
   let test = true;
   if (array1.length !== array2.length) {
     test = false;
+    return test;
   }
   for (let x in array1) {
     if (array1[x] !== array2[x]) {
