@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = (dictionary,searchValue) => {
-  for (let key in dictionary) {
+  for (const key in dictionary) {
     if (dictionary[key] === searchValue) return key;
   }
 };
