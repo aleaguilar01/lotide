@@ -14,4 +14,17 @@ const countLetters = (sentence) => {
   return results;
 };
 
-console.log(countLetters("aaa bbb ccc"));
+const finalResults = countLetters("aaa bbb ccc");
+const finalResults2 = countLetters("maria");
+
+console.log(finalResults);
+
+assertEqual(finalResults.a, 3);
+assertEqual(finalResults.b, 3);
+assertEqual(finalResults.c, 3);
+assertEqual(finalResults2.m, 1);
+assertEqual(finalResults2.a, 2);
+assertEqual(finalResults2.r, 1);
+assertEqual(finalResults2.i, 1);
+
+
