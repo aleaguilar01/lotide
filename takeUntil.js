@@ -26,13 +26,17 @@ const takeUntil = (arr, callback) => {
     }
     results.push(item);
   }
+  return results;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
 const data3 = [2, 4, 6, 8, 10, 11, 13, 15, 17];
+const data4 = ["a", "b", "c", "d", "e"];
 
 
 assertArraysEqual(takeUntil(data1, x => x < 0), [1, 2, 5, 7, 2]);
 assertArraysEqual(takeUntil(data2, x => x === ','), ["I've", "been", "to", "Hollywood"]);
 assertArraysEqual(takeUntil(data3, x => x % 2 !== 0), [2, 4, 6, 8, 10]);
+assertArraysEqual(takeUntil(data4, x => x === "z"), ["a", "b", "c", "d", "e"]);
+
