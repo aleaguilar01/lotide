@@ -58,4 +58,11 @@ describe("Testing eqObject", () => {
     assert.equal((eqObjects(multiColorShirtObject , longSleeveMultiColorShirtObject)), false);
 
   });
+
+  it("should false if comparing two objects with the same keys and different depth and types of values inside", () => {
+    const multiColorShirtObject = {colors: {color: {color1: "blue", color2: {color21: "soft red", color22: "pink"}}, color2: "red"}, size: {size1: ["xxs", "xs", "s"], size2: "medium", size3: {large: {xl: "extra_large", xxl: "extra extra large"}}} };
+    const longSleeveMultiColorShirtObject = {colors: {color: {color1: "blue", color2: {color21: "soft red", color22: "pink"}}, color2: "red"}, size: {size1: ["xxs", "xs", "s"], size2: "medium", size3: {large: {xl: "extra_large", xxl: "extra extra large"}}} };
+    assert.equal((eqObjects(multiColorShirtObject , longSleeveMultiColorShirtObject)), true);
+
+  });
 });
