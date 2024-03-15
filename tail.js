@@ -1,6 +1,5 @@
 const tail = function(list) {
-  const newList = list.slice(1);
-  return newList;
+  return list.slice(1);
 };
 
 module.exports = tail;
