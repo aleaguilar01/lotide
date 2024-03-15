@@ -2,7 +2,7 @@ const assert = require('chai').assert;
 const head = require('../head');
 
 describe("Testing head", () => {
-  it("returns as number the first element of an array of numbers", () => {
+  it("returns the first element of an array of numbers", () => {
     const headElement = head([1, 2 , 3]);
     assert.strictEqual(headElement, 1);
     assert.typeOf(headElement, 'number');
