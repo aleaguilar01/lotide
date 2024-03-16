@@ -42,3 +42,5 @@ The following functions are currently implemented:
 * `function14(letterPositions)`: Function that taken an string and returns an object with arrays of the positions of each letter.
 * `function15(takeUntil)`: Function that takes in an array and returns the values of the array until it founds the condition stablished. 
 * `function16(without)`: Function that takes in an array and returns the values of the array until 
+* `function16(map)`: Function that takes in an array and returns another array after passing a callback to each item. 
+
